@@ -1,0 +1,396 @@
+cm7ty56t As screen:
+    Fill: =RGBA(237, 237, 237, 1)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    HtmlText3_21 As htmlViewer:
+        Height: =61
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.95), 
+                      rgba(255, 255, 255, 0.95));width:100%;height:60px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.49
+        Width: =233.40
+        X: =75.55
+        ZIndex: =1
+
+    Image8_28 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: =sidebar
+        ImagePosition: =ImagePosition.Fill
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =75.55
+        X: =0.00
+        ZIndex: =3
+
+    HtmlText3_20 As htmlViewer:
+        Height: =768
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(0, 0, 0, 0.75), 
+                      rgba(0, 0, 0, 0.75));width:100%;height:768px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.49
+        Width: =75.99
+        X: =0.00
+        ZIndex: =4
+
+    Image9_28 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =133
+        Image: =Logo1111
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =61.74
+        X: =7.01
+        ZIndex: =5
+
+    Icon1_3 As icon.Home:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Home, Fade)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =296.95
+        Y: =15
+        ZIndex: =6
+
+    Icon2_3 As icon.Reload:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.Reload
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =5.65
+        X: =286.77
+        Y: =19
+        ZIndex: =7
+
+    HtmlText3_22 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer'>Dashboard</div>"
+        OnSelect: =Navigate(cm,CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =223
+        ZIndex: =8
+
+    Label6_1 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        Size: =5.88
+        Text: ="Projects"
+        Width: =33.92
+        X: =179.80
+        Y: =15
+        ZIndex: =9
+
+    HtmlText3_23 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(0, 0, 0, 0.4), 
+                      rgba(219, 202, 202, 0.4));width:100%;height:37px;text-align:center;padding-top:7px;padding-right:7px;cursor:pointer'>Projects</div>"
+        OnSelect: =Navigate(cm7ty56t,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =288
+        ZIndex: =10
+
+    HtmlText3_24 As htmlViewer:
+        Font: =Font.Lato
+        Height: =207
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.9), 
+                      rgba(255, 255, 255, 0.9));width:100%;height:206px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'>Head Office</div>"
+        OnSelect: =Navigate(cmfdgom8_1,Fade);Set(cproject, "HO")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =94.31
+        X: =90.91
+        Y: =169
+        ZIndex: =11
+
+    HtmlText3_25 As htmlViewer:
+        Font: =Font.Lato
+        Height: =207
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.8), 
+                      rgba(255, 255, 255, 0.8));width:100%;height:206px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'>RLI</div>"
+        OnSelect: =Navigate(cmfdgom8_3,Fade);Set(cproject, "RLI")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =95.66
+        X: =196.53
+        Y: =168
+        ZIndex: =12
+
+    HtmlText3_26 As htmlViewer:
+        Font: =Font.Lato
+        Height: =193
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.8), 
+                      rgba(255, 255, 255, 0.8));width:100%;height:192px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'>RKM</div>"
+        OnSelect: =Navigate(cmfdgom8_2,Fade);Set(cproject, "RKM")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =62.20
+        X: =232.49
+        Y: =462
+        ZIndex: =13
+
+    HtmlText3_27 As htmlViewer:
+        Font: =Font.Lato
+        Height: =193
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.8), 
+                      rgba(255, 255, 255, 0.8));width:100%;height:192px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'>RLK</div>"
+        OnSelect: =Navigate(cmfdgom8,Fade);Set(cproject, "RLK")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =62.20
+        X: =162.16
+        Y: =462
+        ZIndex: =14
+
+    HtmlText3_28 As htmlViewer:
+        Font: =Font.Lato
+        Height: =193
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.8), 
+                      rgba(255, 255, 255, 0.8));width:100%;height:192px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'>DVO</div>"
+        OnSelect: =Navigate(cmfdgom8_4,Fade);Set(cproject, "DVO")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =61.96
+        X: =90.23
+        Y: =462
+        ZIndex: =15
+
+    Icon3_2 As icon.BackArrow:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =80.74
+        Y: =17
+        ZIndex: =16
+
+    HtmlText3_57 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:35px;cursor:pointer'>User Management</div>"
+        OnSelect: =Navigate(cmg5r3te,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =353
+        ZIndex: =17
+
+    Icon4_1 As icon.RadarActivityMonitor:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =39
+        Icon: =Icon.RadarActivityMonitor
+        OnSelect: =Navigate(cm,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =14.47
+        Y: =222
+        ZIndex: =18
+
+    Icon6_1 As icon.OfficeBuilding:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Icon: =Icon.OfficeBuilding
+        OnSelect: =Navigate(cm7ty56t,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =7.91
+        X: =14.47
+        Y: =288
+        ZIndex: =19
+
+    Icon5_1 As icon.Settings:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =34
+        Icon: =Icon.Settings
+        OnSelect: =Navigate(cmg5r3te,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =14.47
+        Y: =353
+        ZIndex: =20
+
+    HtmlText3_179 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer'>Inventory List</div>"
+        OnSelect: =Navigate(cmjeriyg,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =418
+        ZIndex: =21
+
+    Icon8_10 As icon.ListScrollWatchlist:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Icon: =Icon.ListScrollWatchlist
+        OnSelect: =Navigate(cmjeriyg,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =8.83
+        X: =14.47
+        Y: =418
+        ZIndex: =22
+
+    Image9 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =217
+        Image: =hoicon
+        OnSelect: =Navigate(cmfdgom8_1,Fade);Set(cproject, "HO")
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =78.03
+        X: =98.61
+        Y: =175
+        ZIndex: =23
+
+    Image10 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =167
+        Image: ='office-icon-png-29'
+        OnSelect: =Navigate(cmfdgom8_3,Fade);Set(cproject, "RLI")
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =76.21
+        X: =206.26
+        Y: =200
+        ZIndex: =24
+
+    Image10_1 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =162
+        Image: =rliico
+        OnSelect: =Navigate(cmfdgom8_4,Fade);Set(cproject, "DVO")
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =76.21
+        X: =83.00
+        Y: =493
+        ZIndex: =25
+
+    Image10_2 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =161
+        Image: =rliico
+        OnSelect: =Navigate(cmfdgom8,Fade);Set(cproject, "RLK")
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =76.21
+        X: =155.15
+        Y: =494
+        ZIndex: =26
+
+    Image10_3 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =161
+        Image: =rliico
+        OnSelect: =Navigate(cmfdgom8_2,Fade);Set(cproject, "RKM")
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =76.21
+        X: =227.52
+        Y: =494
+        ZIndex: =27
+

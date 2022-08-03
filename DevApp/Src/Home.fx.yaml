@@ -1,0 +1,167 @@
+Home As screen:
+    BackgroundImage: =
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Button1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(227, 52, 52, 1)
+        Font: =Font.Lato
+        Height: =60
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |
+            =Switch(
+                session_role.Value,
+                "Central Manager",
+                Navigate(
+                    cm,
+                    Fade
+                ),
+                "Project Manager",
+                Navigate(
+                    pm,
+                    Fade
+                ),
+                "Office Manager",
+                Navigate(
+                    om,
+                    Fade
+                )
+            );
+            Switch(
+                session_location.Value,
+                "HO",
+                ClearCollect(
+                    dataPointCollection,
+                    Column
+                ),
+                "RKK",
+                ClearCollect(
+                    dataPointCollection,
+                    Columns
+                ),
+                "RLI",
+                ClearCollect(
+                    dataPointCollection,
+                    Row
+                ),
+                "DVO",
+                ClearCollect(
+                    dataPointCollection,
+                    Rowes
+                ),
+                "RKM",
+                ClearCollect(
+                    dataPointCollection,
+                    Rows
+                )
+            );
+            Switch(
+                session_location.Value,
+                "HO",
+                Set(
+                    dataSet,
+                    Column
+                ),
+                "RKK",
+                Set(
+                    dataSet,
+                    Columns
+                ),
+                "RLI",
+                Set(
+                    dataSet,
+                    Row
+                ),
+                "DVO",
+                Set(
+                    dataSet,
+                    Rowes
+                ),
+                "RKM",
+                Set(
+                    dataSet,
+                    Rows
+                )
+            );
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =4.52
+        Text: ="Launch"
+        Width: =69.20
+        X: =120.54
+        Y: =508
+        ZIndex: =1
+
+    Group6_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        Label7_7 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(163, 23, 23, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            Height: =79
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =11.54
+            Text: ="TEAM"
+            Width: =86.85
+            X: =129.13
+            Y: =154
+            ZIndex: =4
+
+        Label43_4 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            Height: =46
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =2.93
+            Text: ="Technical, Engineering, Architecture, Marketing (Nigeria) L.t.d"
+            Width: =107.87
+            X: =101.32
+            Y: =242
+            ZIndex: =5
+
+        Label43_5 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            Height: =117
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =3.62
+            Text: ="INVENTORY MANAGEMENT SYSTEM"
+            Width: =126.87
+            X: =91.60
+            Y: =312
+            ZIndex: =6
+
+        Image3_2 As image:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =67
+            Image: ='team-group-favicon-32x32'
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =19.45
+            X: =112.63
+            Y: =168
+            ZIndex: =7
+

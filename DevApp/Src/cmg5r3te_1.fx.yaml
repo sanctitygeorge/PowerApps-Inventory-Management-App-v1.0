@@ -1,0 +1,879 @@
+cmg5r3te_1 As screen:
+    Fill: =RGBA(237, 237, 237, 1)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    HtmlText3_81 As htmlViewer:
+        Height: =61
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.95), 
+                      rgba(255, 255, 255, 0.95));width:100%;height:60px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.49
+        Width: =233.40
+        X: =75.55
+        ZIndex: =1
+
+    Image8_35 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: =sidebar
+        ImagePosition: =ImagePosition.Fill
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =75.55
+        X: =0.00
+        ZIndex: =3
+
+    HtmlText3_80 As htmlViewer:
+        Height: =768
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(0, 0, 0, 0.75), 
+                      rgba(0, 0, 0, 0.75));width:100%;height:768px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.49
+        Width: =75.99
+        X: =0.00
+        ZIndex: =4
+
+    Image9_35 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =133
+        Image: =Logo1111
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =61.74
+        X: =7.01
+        ZIndex: =5
+
+    Icon1_10 As icon.Home:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Home, Fade)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =296.95
+        Y: =15
+        ZIndex: =6
+
+    Icon2_10 As icon.Reload:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.Reload
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =5.65
+        X: =286.77
+        Y: =19
+        ZIndex: =7
+
+    HtmlText3_84 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer'>Dashboard</div>"
+        OnSelect: =Navigate(cm,CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =223
+        ZIndex: =8
+
+    Label6_3 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =48
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        Size: =5.88
+        Text: ="Add New User"
+        Width: =73.50
+        X: =164.42
+        Y: =6
+        ZIndex: =9
+
+    HtmlText3_85 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-right:7px;cursor:pointer'>Projects</div>"
+        OnSelect: =Navigate(cm7ty56t,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =288
+        ZIndex: =10
+
+    Icon3_10 As icon.BackArrow:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =80.74
+        Y: =17
+        ZIndex: =16
+
+    HtmlText3_87 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(0, 0, 0, 0.4), 
+                      rgba(219, 202, 202, 0.4));width:100%;height:37px;text-align:center;padding-top:7px;padding-left:35px;cursor:pointer'>User Management</div>"
+        OnSelect: =Navigate(cmg5r3te,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =353
+        ZIndex: =17
+
+    Icon4_10 As icon.RadarActivityMonitor:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =39
+        Icon: =Icon.RadarActivityMonitor
+        OnSelect: =Navigate(cm,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =14.47
+        Y: =222
+        ZIndex: =18
+
+    Icon6_7 As icon.OfficeBuilding:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Icon: =Icon.OfficeBuilding
+        OnSelect: =Navigate(cm7ty56t,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =7.91
+        X: =14.47
+        Y: =288
+        ZIndex: =19
+
+    Icon5_3 As icon.Settings:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =34
+        Icon: =Icon.Settings
+        OnSelect: =Navigate(cmg5r3te_1,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =14.47
+        Y: =353
+        ZIndex: =20
+
+    HtmlText3_61 As htmlViewer:
+        Font: =Font.Lato
+        Height: =616
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.8), 
+                      rgba(255, 255, 255, 0.8));width:100%;height:615px;text-align:center;padding-top:7px;padding-left:7px;border-radius:10px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =167.82
+        X: =109.47
+        Y: =96
+        ZIndex: =21
+
+    Form1 As form:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DataSource: ='Sites Events'
+        Height: =565
+        Item: =Defaults('Sites Events')
+        OnSuccess: =Notify("User created successfully",NotificationType.Success);Navigate(cmg5r3te,Fade);ResetForm(Form1)
+        Width: =151.53
+        X: =118.06
+        Y: =117
+        ZIndex: =22
+
+        "'Location Section_DataCard1' As typedDataCard.comboBoxEditCard":
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Location_x0020_Section"
+            Default: =ThisItem.'Location Section'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Sites Events'],DataSourceInfo.DisplayName,"Location_x0020_Section")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue14.Selected
+            Width: =50
+            X: =1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey14 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: =Parent.DisplayName
+                Width: =36.87
+                Wrap: =false
+                X: =6.78
+                ZIndex: =1
+
+            DataCardValue14 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Black, Color.Red)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(64, 56, 56, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =1
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
+                IsSearchable: =false
+                Items: =Choices([@'Sites Events'].'Location Section')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(230, 230, 230, 1)
+                SelectMultiple: =false
+                Size: =2.93
+                Tooltip: =Parent.DisplayName
+                Width: =36.87
+                X: =6.78
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                ZIndex: =2
+
+            ErrorMessage14 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =3.17
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =36.87
+                X: =6.78
+                Y: =DataCardValue14.Y + DataCardValue14.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey14.Height
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =6.78
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey14.Y
+                ZIndex: =4
+
+        "'Full Name_DataCard1' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="FullName"
+            Default: =ThisItem.'Full Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Sites Events'],DataSourceInfo.DisplayName,"FullName")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =99
+            MaxLength: =DataSourceInfo([@'Sites Events'], DataSourceInfo.MaxLength, "FullName")
+            Required: =false
+            Update: =DataCardValue4.Text
+            Width: =50
+            X: =0
+            Y: =0
+            ZIndex: =23
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: =Parent.DisplayName
+                Width: =137.73
+                Wrap: =false
+                X: =6.78
+                ZIndex: =1
+
+            DataCardValue4 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =1
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(237, 237, 237, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =2.93
+                Tooltip: =Parent.DisplayName
+                Width: =137.73
+                X: =6.78
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =3.17
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =137.73
+                X: =6.78
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey4.Height
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =6.78
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+        Title_DataCard1 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Title
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Sites Events'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =102
+            MaxLength: =DataSourceInfo([@'Sites Events'], DataSourceInfo.MaxLength, "Title")
+            Required: =false
+            Update: =DataCardValue1.Text
+            Width: =50
+            X: =1
+            Y: =0
+            ZIndex: =23
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: ="Email"
+                Width: =137.73
+                Wrap: =false
+                X: =6.78
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =1
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(237, 237, 237, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =2.93
+                Tooltip: =Parent.DisplayName
+                Width: =137.73
+                X: =6.78
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =3.17
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =137.73
+                X: =6.78
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey1.Height
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =6.78
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+        Location_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Location"
+            Default: =ThisItem.Location
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Sites Events'],DataSourceInfo.DisplayName,"Location")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =109
+            Required: =false
+            Update: =DataCardValue3.Selected
+            Width: =50
+            X: =2
+            Y: =0
+            ZIndex: =23
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: =Parent.DisplayName
+                Width: =137.73
+                Wrap: =false
+                X: =6.78
+                ZIndex: =1
+
+            DataCardValue3 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(64, 56, 56, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(237, 237, 237, 1)
+                IsSearchable: =false
+                Items: =Choices([@'Sites Events'].Location)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectMultiple: =false
+                Size: =2.93
+                Tooltip: =Parent.DisplayName
+                Width: =137.73
+                X: =6.78
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =3.17
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =137.73
+                X: =6.78
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey3.Height
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =6.78
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+        Role_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Role"
+            Default: =ThisItem.Role
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Sites Events'],DataSourceInfo.DisplayName,"Role")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =161
+            Required: =false
+            Update: =DataCardValue2.Selected
+            Width: =50
+            X: =0
+            Y: =1
+            ZIndex: =23
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: =Parent.DisplayName
+                Width: =36.87
+                Wrap: =false
+                X: =6.78
+                ZIndex: =1
+
+            DataCardValue2 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(64, 56, 56, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =1
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(237, 237, 237, 1)
+                IsSearchable: =false
+                Items: =Choices([@'Sites Events'].Role)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(230, 230, 230, 1)
+                SelectMultiple: =false
+                Size: =2.93
+                Tooltip: =Parent.DisplayName
+                Width: =36.87
+                X: =6.78
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =3.17
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =36.87
+                X: =6.78
+                Y: =DataCardValue2.Y + DataCardValue2.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey2.Height
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =6.78
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey2.Y
+                ZIndex: =4
+
+        IsAdmin_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="IsAdmin"
+            Default: =ThisItem.IsAdmin
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Sites Events'],DataSourceInfo.DisplayName,"IsAdmin")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue5.Selected
+            Width: =50
+            X: =2
+            Y: =1
+            ZIndex: =23
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: =Parent.DisplayName
+                Width: =36.87
+                Wrap: =false
+                X: =6.78
+                ZIndex: =1
+
+            DataCardValue5 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(64, 56, 56, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =1
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(237, 237, 237, 1)
+                IsSearchable: =false
+                Items: =Choices([@'Sites Events'].IsAdmin)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(230, 230, 230, 1)
+                SelectMultiple: =false
+                Size: =2.93
+                Tooltip: =Parent.DisplayName
+                Width: =36.87
+                X: =6.78
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =3.17
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =36.87
+                X: =6.78
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey5.Height
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.93
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =6.78
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(242, 34, 55, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =37
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(247, 36, 57, 1), -20%)
+        OnSelect: =SubmitForm(Form1)
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =2.93
+        Text: ="Create User"
+        Width: =43.65
+        X: =170.30
+        Y: =571
+        ZIndex: =23
+
+    HtmlText3_247 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer'>Inventory List</div>"
+        OnSelect: =Navigate(cmjeriyg,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =418
+        ZIndex: =24
+
+    Icon8_21 As icon.ListScrollWatchlist:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Icon: =Icon.ListScrollWatchlist
+        OnSelect: =Navigate(cmjeriyg,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =8.83
+        X: =14.47
+        Y: =418
+        ZIndex: =25
+

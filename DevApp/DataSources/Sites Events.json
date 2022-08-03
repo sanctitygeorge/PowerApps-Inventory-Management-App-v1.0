@@ -1,0 +1,52 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-06-01T16:33:36.5630000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{HasAttachments}": "Has attachments",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "FullName": "Full Name",
+      "ID": "ID",
+      "IsAdmin": "IsAdmin",
+      "IsAdmin#Id": "IsAdmin Id",
+      "Location": "Location",
+      "Location#Id": "Location Id",
+      "Location_x0020_Section": "Location Section",
+      "Location_x0020_Section#Id": "Location Section Id",
+      "Modified": "Modified",
+      "Role": "Role",
+      "Role#Id": "Role Id",
+      "Title": "Title"
+    },
+    "DatasetName": "https://teamgroupcloud.sharepoint.com/sites/EMPLOYEESELFSERVICE",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Sites Events",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

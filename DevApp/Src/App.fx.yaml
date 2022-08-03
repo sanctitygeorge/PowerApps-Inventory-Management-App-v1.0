@@ -1,0 +1,16 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =Set(session_email,User().Email);
+        Set(session_location,LookUp('Sites Events',User().Email = Title).Location);
+        Set(session_role,LookUp('Sites Events',User().Email = Title).Role);
+        Set(session_name,LookUp('Sites Events',User().Email = Title).'Full Name');
+        Set(session_admin,LookUp('Sites Events',User().Email = Title).IsAdmin);
+        Set(session_section,LookUp('Sites Events',User().Email = Title).'Location Section');
+        Set(editGrid2,false);
+        Set(pieditGrid2,false);
+        Set(oeditGrid,false);
+        Set(cpeditGrid,false);
+        Set(cpseditGrid,false);
+        ClearCollect(totalInventory, 'Site Section')
+

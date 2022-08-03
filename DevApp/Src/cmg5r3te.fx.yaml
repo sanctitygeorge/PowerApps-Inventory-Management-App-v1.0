@@ -1,0 +1,922 @@
+cmg5r3te As screen:
+    Fill: =RGBA(237, 237, 237, 1)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: =Set(cUDeleteItem,false)
+
+    HtmlText3_59 As htmlViewer:
+        Height: =61
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.95), 
+                      rgba(255, 255, 255, 0.95));width:100%;height:60px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.49
+        Width: =233.40
+        X: =75.55
+        ZIndex: =1
+
+    Image8_32 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: =sidebar
+        ImagePosition: =ImagePosition.Fill
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =75.55
+        X: =0.00
+        ZIndex: =3
+
+    HtmlText3_58 As htmlViewer:
+        Height: =768
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(0, 0, 0, 0.75), 
+                      rgba(0, 0, 0, 0.75));width:100%;height:768px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.49
+        Width: =75.99
+        X: =0.00
+        ZIndex: =4
+
+    Image9_32 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =133
+        Image: =Logo1111
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =61.74
+        X: =7.01
+        ZIndex: =5
+
+    Icon1_7 As icon.Home:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Home,Fade)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Tooltip: ="Homepage"
+        Width: =6.78
+        X: =296.95
+        Y: =15
+        ZIndex: =6
+
+    Icon2_7 As icon.Reload:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.Reload
+        OnSelect: =Refresh('Sites Events')
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Tooltip: ="Refresh"
+        Width: =5.65
+        X: =286.77
+        Y: =19
+        ZIndex: =7
+
+    HtmlText3_62 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer'>Dashboard</div>"
+        OnSelect: =Navigate(cm,CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =223
+        ZIndex: =8
+
+    Label6_2 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =48
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        Size: =5.88
+        Text: ="User Management"
+        Width: =73.50
+        X: =160.56
+        Y: =8
+        ZIndex: =9
+
+    HtmlText3_63 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-right:7px;cursor:pointer'>Projects</div>"
+        OnSelect: =Navigate(cm7ty56t,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =288
+        ZIndex: =10
+
+    HtmlText3_60 As htmlViewer:
+        Font: =Font.Lato
+        Height: =668
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.8), 
+                      rgba(255, 255, 255, 0.8));width:100%;height:667px;text-align:center;padding-top:7px;padding-left:7px;border-radius:10px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =227.96
+        X: =78.25
+        Y: =89
+        ZIndex: =11
+
+    Icon3_7 As icon.BackArrow:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Tooltip: ="Go Back"
+        Width: =6.78
+        X: =80.74
+        Y: =17
+        ZIndex: =16
+
+    HtmlText3_67 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(0, 0, 0, 0.4), 
+                      rgba(219, 202, 202, 0.4));width:100%;height:37px;text-align:center;padding-top:7px;padding-left:35px;cursor:pointer'>User Management</div>"
+        OnSelect: =Navigate(cmg5r3te,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =353
+        ZIndex: =17
+
+    Icon4_2 As icon.RadarActivityMonitor:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =39
+        Icon: =Icon.RadarActivityMonitor
+        OnSelect: =Navigate(cm,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =14.47
+        Y: =222
+        ZIndex: =18
+
+    Icon6_2 As icon.OfficeBuilding:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Icon: =Icon.OfficeBuilding
+        OnSelect: =Navigate(cmg5r3te,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =7.91
+        X: =14.47
+        Y: =288
+        ZIndex: =19
+
+    Icon5_2 As icon.Settings:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =34
+        Icon: =Icon.Settings
+        OnSelect: =Navigate(cmg5r3te,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =14.47
+        Y: =353
+        ZIndex: =20
+
+    Button2_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(242, 34, 55, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(247, 36, 57, 1), -20%)
+        OnSelect: =Navigate(cmg5r3te_1,Fade)
+        PaddingLeft: =33
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =2.71
+        Text: ="Add New User"
+        Width: =40.94
+        X: =254.66
+        Y: =123
+        ZIndex: =28
+
+    Icon9 As icon.Add:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Icon: =Icon.Add
+        OnSelect: =Navigate(cmg5r3te_1,Fade)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =258.27
+        Y: =126
+        ZIndex: =29
+
+    Button2_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(242, 34, 55, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(247, 36, 57, 1), -20%)
+        OnSelect: =Set(editGrid,!editGrid)
+        PaddingLeft: =33
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =2.71
+        Text: =If(!editGrid, "Edit Table", "Exit Edit")
+        Width: =32.12
+        X: =218.25
+        Y: =123
+        ZIndex: =30
+
+    Icon12 As icon.Edit:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =27
+        Icon: =Icon.Edit
+        OnSelect: =Set(editGrid,!editGrid)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =7.69
+        X: =221.87
+        Y: =126
+        ZIndex: =31
+
+    Button2_3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(242, 34, 55, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(247, 36, 57, 1), -20%)
+        OnSelect: |-
+            =ForAll(Filter(Gallery3.AllItems, Toggle1.Value = true), Patch('Sites Events', ThisRecord,{Title:TextInput1_1.Text,'Full Name':TextInput1.Text,Role:{Value:ComboBox1_2.Selected.Value},Location:{Value:ComboBox1_1.Selected.Value},IsAdmin:{Value:ComboBox1.Selected.Value}}));Refresh('Sites Events');Set(editGrid,false)
+        PaddingLeft: =33
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =2.71
+        Text: ="Save "
+        Width: =27.82
+        X: =183.87
+        Y: =123
+        ZIndex: =32
+
+    Icon13 As icon.Save:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =31
+        Icon: =Icon.Save
+        OnSelect: |-
+            =ForAll(Filter(Gallery3.AllItems, Toggle1.Value = true), Patch('Sites Events', ThisRecord,{Title:TextInput1_1.Text,'Full Name':TextInput1.Text,Role:{Value:ComboBox1_2.Selected.Value},Location:{Value:ComboBox1_1.Selected.Value},IsAdmin:{Value:ComboBox1.Selected.Value}}));Refresh('Sites Events');Set(editGrid,false)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =10.40
+        X: =187.03
+        Y: =124
+        ZIndex: =33
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =38
+
+        HtmlText3_64 As htmlViewer:
+            Font: =Font.Lato
+            Height: =668
+            HtmlText: |-
+                ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.97), 
+                          rgba(255, 255, 255, 0.97));width:100%;height:667px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =2.93
+            Visible: =If(session_admin.Value = "No", true,false)
+            Width: =227.96
+            X: =78.25
+            Y: =89
+            ZIndex: =34
+
+        Label35_21 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 246, 247, 1)
+            Font: =Font.Lato
+            Height: =203
+            PaddingLeft: =100
+            PaddingRight: =9.05
+            PaddingTop: =9.05
+            Size: =3.85
+            Text: ="You are prohibited from accessing this page!"
+            Visible: =If(session_admin.Value = "No", true,false)
+            Width: =145.65
+            X: =122.58
+            Y: =271
+            ZIndex: =35
+
+        Circle1_22 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =14.25
+            Visible: =If(session_admin.Value = "No", true,false)
+            Width: =14.25
+            X: =188.39
+            Y: =303
+            ZIndex: =36
+
+        Icon12_28 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =63
+            Icon: =Icon.Cancel
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Visible: =If(session_admin.Value = "No", true,false)
+            Width: =10.64
+            X: =190.43
+            Y: =305
+            ZIndex: =37
+
+    HtmlText3_246 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer'>Inventory List</div>"
+        OnSelect: =Navigate(cmjeriyg,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =418
+        ZIndex: =44
+
+    Group3_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =44
+
+        HtmlText3_149 As htmlViewer:
+            Font: =Font.Lato
+            Height: =670
+            HtmlText: |-
+                ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.8), 
+                          rgba(255, 255, 255, 0.8));width:100%;height:669px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =2.93
+            Visible: =cUDeleteItem
+            Width: =227.96
+            X: =78.25
+            Y: =87
+            ZIndex: =38
+
+        Label35_24 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 246, 247, 1)
+            Font: =Font.Lato
+            Height: =203
+            PaddingLeft: =100
+            PaddingRight: =9.05
+            PaddingTop: =9.05
+            Size: =3.39
+            Text: ="Are you sure you want to delete this item?"
+            Visible: =cUDeleteItem
+            Width: =124.62
+            X: =133.65
+            Y: =278
+            ZIndex: =39
+
+        Circle1_25 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =14.25
+            Visible: =cUDeleteItem
+            Width: =14.25
+            X: =189.52
+            Y: =301
+            ZIndex: =40
+
+        Icon16_1 As icon.Trash:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =78
+            Icon: =Icon.Trash
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Visible: =cUDeleteItem
+            Width: =8.83
+            X: =192.24
+            Y: =293
+            ZIndex: =41
+
+        Button6_2 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(39, 171, 61, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: =Remove('Sites Events',Gallery3.Selected);Refresh('Sites Events');Set(cUDeleteItem,!cUDeleteItem)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =2.71
+            Text: ="Yes"
+            Visible: =cUDeleteItem
+            Width: =36.18
+            X: =152.43
+            Y: =428
+            ZIndex: =42
+
+        Button6_3 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: =Set(cUDeleteItem,!cUDeleteItem)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =2.71
+            Text: ="No"
+            Visible: =cUDeleteItem
+            Width: =36.18
+            X: =205.80
+            Y: =428
+            ZIndex: =43
+
+    Icon8_20 As icon.ListScrollWatchlist:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Icon: =Icon.ListScrollWatchlist
+        OnSelect: =Navigate(cmjeriyg,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =8.83
+        X: =14.47
+        Y: =418
+        ZIndex: =45
+
+    TextInput2_6 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =33
+        HintText: ="kindly enter search criteria"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =2.93
+        Width: =87.74
+        X: =83.00
+        Y: =123
+        ZIndex: =46
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =46
+
+        Gallery3 As gallery.galleryVertical:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisplayMode: =Edit
+            Height: =497
+            Items: ='Sites Events'
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =37
+            Width: =216.43
+            X: =83.00
+            Y: =215
+            ZIndex: =21
+
+            TextInput1 As text:
+                BorderColor: =RGBA(179, 179, 179, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =ThisItem.'Full Name'
+                DisabledBorderColor: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(editGrid = true,DisplayMode.Edit,View)
+                FocusedBorderThickness: =1
+                Height: =37
+                HoverBorderColor: =RGBA(128, 128, 128, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(241, 244, 249, 1)
+                OnSelect: =Select(Parent)
+                PaddingLeft: =5
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =2.49
+                Width: =48.40
+                X: =0.00
+                ZIndex: =1
+
+            TextInput1_1 As text:
+                BorderColor: =RGBA(179, 179, 179, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =ThisItem.Title
+                DisabledBorderColor: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =TextInput1.DisplayMode
+                FocusedBorderThickness: =1
+                Height: =37
+                HoverBorderColor: =RGBA(128, 128, 128, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(241, 244, 249, 1)
+                OnSelect: =Select(Parent)
+                PaddingLeft: =5
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =2.49
+                Width: =62.88
+                X: =48.40
+                ZIndex: =2
+
+            ComboBox1 As combobox:
+                BorderColor: =RGBA(179, 179, 179, 1)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(94, 92, 92, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(153, 153, 153, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =ThisItem.IsAdmin
+                DefaultSelectedItems: =ThisItem.IsAdmin
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =TextInput1.DisplayMode
+                FocusedBorderThickness: =1
+                Height: =37
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                IsSearchable: =false
+                Items: =Choices([@'Sites Events'].IsAdmin)
+                OnSelect: =Select(Parent)
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =Self.HoverColor
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(204, 204, 204, 1)
+                SelectMultiple: =false
+                Size: =2.49
+                Width: =17.19
+                X: =171.66
+                ZIndex: =7
+
+            ComboBox1_1 As combobox:
+                BorderColor: =RGBA(179, 179, 179, 1)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(94, 92, 92, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(153, 153, 153, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =ThisItem.Location
+                DefaultSelectedItems: =ThisItem.Location
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =TextInput1.DisplayMode
+                FocusedBorderThickness: =1
+                Height: =37
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                IsSearchable: =false
+                Items: =Choices([@'Sites Events'].Location)
+                OnSelect: =Select(Parent)
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =Self.HoverColor
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(204, 204, 204, 1)
+                SelectMultiple: =false
+                Size: =2.49
+                Width: =21.48
+                X: =150.17
+                ZIndex: =8
+
+            ComboBox1_2 As combobox:
+                BorderColor: =RGBA(179, 179, 179, 1)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(94, 92, 92, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(153, 153, 153, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =ThisItem.Role
+                DefaultSelectedItems: =ThisItem.Role
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =TextInput1.DisplayMode
+                FocusedBorderThickness: =1
+                Height: =37
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                IsSearchable: =false
+                Items: =Choices([@'Sites Events'].Role)
+                OnSelect: =Select(Parent)
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =Self.HoverColor
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(204, 204, 204, 1)
+                SelectMultiple: =false
+                Size: =2.49
+                Width: =39.13
+                X: =111.27
+                ZIndex: =9
+
+            Icon11_1 As icon.Trash:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =32
+                HoverColor: =ColorFade(Self.Color, 50%)
+                Icon: =Icon.Trash
+                OnSelect: =Select(Parent);Set(cUDeleteItem,!cUDeleteItem)
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Tooltip: ="Delete"
+                Width: =8.15
+                X: =191.11
+                Y: =3
+                ZIndex: =11
+
+            Toggle1 As toggleSwitch:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                Default: |-
+                    =ThisItem.'Full Name' <> TextInput1.Text || ThisItem.Title <> TextInput1_1.Text || ThisItem.Role.Value <> ComboBox1_2.Selected.Value || ThisItem.Location.Value
+                     <> ComboBox1_1.Selected.Value || ThisItem.IsAdmin.Value <> ComboBox1.Selected.Value
+                FalseFill: =RGBA(128, 130, 133, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                Height: =13
+                OnSelect: =Select(Parent)
+                Size: =2.71
+                Tooltip: ="Edit Indicator"
+                TrueFill: =RGBA(100, 118, 132, 1)
+                Visible: =false
+                Width: =12.88
+                X: =191.11
+                Y: =11
+                ZIndex: =12
+
+            Label3 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =24
+                OnSelect: =Select(Parent)
+                PaddingRight: =1.12
+                PaddingTop: =1.12
+                Size: =2.71
+                Text: =If(Toggle1.Value, "Editing", "" )
+                Width: =15.83
+                X: =199.25
+                Y: =7
+                ZIndex: =13
+
+        Label5 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(69, 65, 65, 1)
+            Height: =37
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =2.49
+            Text: ="Full Name"
+            Width: =48.40
+            X: =83.00
+            Y: =178
+            ZIndex: =22
+
+        Label5_1 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(69, 65, 65, 1)
+            Height: =37
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =2.49
+            Text: ="Email Address"
+            Width: =62.88
+            X: =131.40
+            Y: =178
+            ZIndex: =23
+
+        Label5_2 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(69, 65, 65, 1)
+            Height: =37
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =2.49
+            Text: ="Role"
+            Width: =39.35
+            X: =194.27
+            Y: =178
+            ZIndex: =24
+
+        Label5_3 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(69, 65, 65, 1)
+            Height: =37
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =2.49
+            Text: ="Location"
+            Width: =20.58
+            X: =233.85
+            Y: =178
+            ZIndex: =25
+
+        Label5_4 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(69, 65, 65, 1)
+            Height: =37
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =2.49
+            Text: ="IsAdmin"
+            Width: =17.42
+            X: =254.43
+            Y: =178
+            ZIndex: =26
+
+        Label5_5 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(69, 65, 65, 1)
+            Height: =37
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =2.49
+            Text: ="Actions"
+            Width: =27.60
+            X: =271.84
+            Y: =178
+            ZIndex: =27
+
+    Icon17_6 As icon.Search:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(77, 71, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =27
+        Icon: =Icon.Search
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =7.91
+        X: =161.47
+        Y: =126
+        ZIndex: =47
+

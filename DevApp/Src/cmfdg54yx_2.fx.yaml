@@ -1,0 +1,1721 @@
+cmfdg54yx_2 As screen:
+    Fill: =RGBA(237, 237, 237, 1)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: =Set(cpsDeleteItem,false)
+
+    HtmlText3_129 As htmlViewer:
+        Height: =61
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.9), 
+                      rgba(255, 255, 255, 0.9));width:100%;height:60px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.49
+        Width: =233.40
+        X: =75.55
+        ZIndex: =1
+
+    Image8_45 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: =sidebar
+        ImagePosition: =ImagePosition.Fill
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =75.55
+        X: =0.00
+        ZIndex: =3
+
+    HtmlText3_128 As htmlViewer:
+        Height: =768
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(0, 0, 0, 0.75), 
+                      rgba(0, 0, 0, 0.75));width:100%;height:768px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.49
+        Width: =75.99
+        X: =0.00
+        ZIndex: =4
+
+    Image9_45 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =133
+        Image: =Logo1111
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =61.74
+        X: =7.01
+        ZIndex: =5
+
+    Icon1_20 As icon.Home:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Home, Fade)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =296.95
+        Y: =15
+        ZIndex: =6
+
+    Icon2_20 As icon.Reload:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.Reload
+        OnSelect: =ClearCollect(totalInventory, 'Site Section')
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =5.65
+        X: =286.77
+        Y: =19
+        ZIndex: =7
+
+    Label7_9 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =38
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        Size: =5.88
+        Text: =sectionCat & " "& invetoryCat & " Inventory"
+        Width: =148.58
+        X: =121.23
+        Y: =13
+        ZIndex: =8
+
+    Icon3_20 As icon.BackArrow:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =80.74
+        Y: =17
+        ZIndex: =11
+
+    HtmlText3_156 As htmlViewer:
+        Font: =Font.Lato
+        Height: =685
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(250, 250, 250, 0.8), 
+                      rgba(250, 250, 250, 0.8));width:100%;height:682px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =227.96
+        X: =79.16
+        Y: =72
+        ZIndex: =19
+
+    Gallery3_7 As gallery.galleryVertical:
+        BorderColor: =RGBA(204, 204, 204, 1)
+        BorderThickness: =1
+        DisplayMode: =Edit
+        Height: =500
+        Items: =Filter(totalInventory, ThisRecord.Location.Value = cproject && ThisRecord.Section.Value = sectionCatFilter && ThisRecord.Categories.Value = invetoryCat, StartsWith(Title,TextInput2_3.Text), IsBlank(ComboBox8.SelectedItems.Value) || IsEmpty(ComboBox8.SelectedItems) || Status.Value =  ComboBox8.Selected.Value )
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =89
+        Width: =219.83
+        X: =83.89
+        Y: =204
+        ZIndex: =20
+
+        Label4_3 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            Height: =83
+            OnSelect: =Select(Parent)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            Size: =2.49
+            Text: =ThisItem.Description
+            Width: =78.71
+            X: =56.54
+            ZIndex: =1
+
+        TextInput1_55 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =View
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =49.97
+            X: =382.88
+            ZIndex: =2
+
+        ComboBox3_11 As combobox:
+            BorderColor: =RGBA(179, 179, 179, 1)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(69, 66, 66, 1)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(69, 66, 66, 1), 20%)
+            ChevronHoverFill: =RGBA(230, 230, 230, 1)
+            Default: =ThisItem.SubProvider
+            DefaultSelectedItems: =ThisItem.SubProvider
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayFields: =["Value"]
+            DisplayMode: =TextInput1_47.DisplayMode
+            FocusedBorderThickness: =1
+            Font: =Font.Lato
+            Height: =33
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(230, 230, 230, 1)
+            IsSearchable: =false
+            Items: |
+                =Switch(
+                    session_location.Value,
+                    "HO", Choices([@Column].'Sub Provider'),
+                    "RKK", Choices([@Columns].SubProvider),
+                    "RLI", Choices([@Row].SubProvider),
+                    "DVO", Choices([@Rowes].SubProvider),
+                    "RKM", Choices([@Rows].SubProvider)
+                )
+            OnSelect: =Select(Parent)
+            PaddingLeft: =65
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(151, 152, 156, 1)
+            SearchFields: =["Value"]
+            SearchItems: =[]
+            SelectionFill: =RGBA(204, 204, 204, 1)
+            SelectMultiple: =false
+            Size: =2.49
+            Width: =49.97
+            X: =382.88
+            Y: =83 / 2 -16.5
+            ZIndex: =3
+
+        TextInput1_52 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =View
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =33.24
+            X: =251.04
+            ZIndex: =4
+
+        ComboBox3_10 As combobox:
+            BorderColor: =RGBA(179, 179, 179, 1)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(69, 66, 66, 1)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(69, 66, 66, 1), 20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            Default: =ThisItem.Status
+            DefaultSelectedItems: =ThisItem.Status
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayFields: =["Value"]
+            DisplayMode: =TextInput1_47.DisplayMode
+            FocusedBorderThickness: =1
+            Font: =Font.Lato
+            Height: =33
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(230, 230, 230, 1)
+            IsSearchable: =false
+            Items: |
+                =Switch(
+                    session_location.Value,
+                    "HO", Choices([@Column].Status),
+                    "RKK", Choices([@Columns].Status),
+                    "RLI", Choices([@Row].Status),
+                    "DVO", Choices([@Rowes].Status),
+                    "RKM", Choices([@Rows].Status)
+                )
+            OnSelect: =Select(Parent)
+            PaddingLeft: =50
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(131, 133, 143, 1)
+            SearchFields: =["Value"]
+            SearchItems: =[]
+            SelectionFill: =RGBA(204, 204, 204, 1)
+            SelectMultiple: =false
+            Size: =2.49
+            Width: =33.24
+            X: =251.04
+            Y: =83 / 2 - 16.5
+            ZIndex: =5
+
+        TextInput1_50 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =View
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =46.59
+            X: =166.01
+            ZIndex: =6
+
+        ComboBox3_9 As combobox:
+            BorderColor: =RGBA(179, 179, 179, 1)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(100, 118, 132, 1)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DefaultSelectedItems: =ThisItem.Location
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayFields: =["Value"]
+            DisplayMode: =TextInput1_47.DisplayMode
+            Font: =Font.Lato
+            Height: =33
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            IsSearchable: =false
+            Items: |
+                =Switch(
+                    session_location.Value,
+                    "HO", Choices([@Column].Location),
+                    "RKK", Choices([@Columns].Location),
+                    "RLI", Choices([@Row].Location),
+                    "DVO", Choices([@Rowes].Location),
+                    "RKM", Choices([@Rows].Location)
+                )
+            OnSelect: =Select(Parent)
+            PaddingLeft: =85
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(32, 54, 71, 1)
+            SearchFields: =["Value"]
+            SearchItems: =[]
+            SelectionFill: =RGBA(204, 204, 204, 1)
+            SelectMultiple: =false
+            Size: =2.49
+            Width: =46.59
+            X: =166.01
+            Y: =83 / 2 -16.5
+            ZIndex: =7
+
+        TextInput1_48 As text:
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.Description
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =TextInput1_47.DisplayMode
+            FocusedBorderThickness: =1
+            Font: =Font.Lato
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            Mode: =TextMode.MultiLine
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =0.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =78.71
+            X: =56.54
+            ZIndex: =8
+
+        TextInput1_49 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.Quantity
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =TextInput1_47.DisplayMode
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =30.75
+            X: =135.24
+            ZIndex: =9
+
+        TextInput1_51 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =
+            DisabledBorderColor: =RGBA(204, 204, 204, 1)
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisplayMode: =If(!oeditGrid, View, Disabled)
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =38.45
+            X: =212.60
+            ZIndex: =10
+
+        TextInput1_53 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.AssignedTo
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =TextInput1_47.DisplayMode
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =57.45
+            X: =284.28
+            ZIndex: =11
+
+        TextInput1_54 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.Provider
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =TextInput1_47.DisplayMode
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =41.16
+            X: =341.73
+            ZIndex: =12
+
+        TextInput1_56 As text:
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.Remarks
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =TextInput1_47.DisplayMode
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            Mode: =TextMode.MultiLine
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =85.48
+            X: =432.87
+            ZIndex: =13
+
+        Separator1_3 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(204, 204, 204, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =219.83
+            X: =0.00
+            Y: =83
+            ZIndex: =14
+
+        ComboBox3_23 As combobox:
+            BorderColor: =RGBA(179, 179, 179, 1)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(100, 118, 132, 1)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DefaultSelectedItems: =ThisItem.Section
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayFields: =["Value"]
+            DisplayMode: =TextInput1_47.DisplayMode
+            Font: =Font.Lato
+            Height: =33
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            IsSearchable: =false
+            Items: |
+                =Switch(
+                    session_location.Value,
+                    "HO", Choices([@Column].'Location Section'),
+                    "RKK", Choices([@Columns].Section),
+                    "RLI", Choices([@Row].Section),
+                    "DVO", Choices([@Rowes].Section),
+                    "RKM", Choices([@Rows].Section)
+                )
+            OnSelect: =Select(Parent)
+            PaddingLeft: =50
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(32, 54, 71, 1)
+            SearchFields: =["Value"]
+            SearchItems: =[]
+            SelectionFill: =RGBA(204, 204, 204, 1)
+            SelectMultiple: =false
+            Size: =2.49
+            Width: =38.45
+            X: =212.60
+            Y: =83 / 2 - 16.5
+            ZIndex: =15
+
+        TextInput1_81 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.OfficeLocation
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =TextInput1_47.DisplayMode
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =49.76
+            X: =518.36
+            ZIndex: =16
+
+        TextInput1_47 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.Title
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =If(cpseditGrid = true,DisplayMode.Edit,View)
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =43.43
+            X: =13.12
+            ZIndex: =17
+
+        TextInput1_46 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(179, 179, 179, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =
+            DisabledBorderColor: =RGBA(128, 128, 128, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =View
+            Fill: =RGBA(60, 60, 61, 1)
+            FocusedBorderThickness: =1
+            Height: =83
+            HoverBorderColor: =RGBA(128, 128, 128, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(241, 244, 249, 1)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =5
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.49
+            Width: =13.12
+            X: =0.00
+            ZIndex: =18
+
+        Icon14_4 As icon.Trash:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =37
+            Icon: =Icon.Trash
+            OnSelect: =Select(Parent);Set(cpsDeleteItem,!cpsDeleteItem)
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =11.76
+            X: =1.36
+            Y: =37
+            ZIndex: =19
+
+        Toggle2_4 As toggleSwitch:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =ThisItem.Title <> TextInput1_47.Text || ThisItem.Description <> TextInput1_48.Text || ThisItem.Quantity <> TextInput1_49.Text || ThisItem.Location.Value <> ComboBox3_9.Selected.Value || ThisItem.Section.Value <> ComboBox3_23.Selected.Value || ThisItem.Status.Value <> ComboBox3_10.Selected.Value || ThisItem.AssignedTo <> TextInput1_53.Text || ThisItem.Provider <> TextInput1_54.Text || ThisItem.SubProvider.Value <> ComboBox3_11.Selected.Value || ThisItem.Remarks <> TextInput1_56.Text || ThisItem.OfficeLocation <> TextInput1_81.Text
+            FalseFill: =RGBA(128, 130, 133, 1)
+            HandleFill: =RGBA(255, 255, 255, 1)
+            Height: =24
+            OnSelect: =Select(Parent)
+            Size: =2.93
+            TrueFill: =RGBA(100, 118, 132, 1)
+            Visible: =false
+            Width: =11.76
+            X: =1.36
+            Y: =16
+            ZIndex: =20
+
+        Icon23 As icon.View:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =33
+            Icon: =Icon.View
+            OnSelect: =Select(Parent);Navigate(cmqhisfg4_3,Fade)
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =8.15
+            X: =2.93
+            Y: =5
+            ZIndex: =21
+
+    Button2_20 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(242, 34, 55, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(247, 36, 57, 1), -20%)
+        OnSelect: =Navigate(om465hfsgh,Fade)
+        PaddingLeft: =33
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =2.71
+        Text: ="Add New Item"
+        Width: =40.94
+        X: =261.44
+        Y: =125
+        ZIndex: =27
+
+    Icon9_5 As icon.Add:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Icon: =Icon.Add
+        OnSelect: =Navigate(om465hfsgh,Fade)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =265.06
+        Y: =128
+        ZIndex: =28
+
+    Button2_19 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(242, 34, 55, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(247, 36, 57, 1), -20%)
+        OnSelect: =Set(cpseditGrid,!cpseditGrid)
+        PaddingLeft: =33
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =2.71
+        Text: =If(!oeditGrid, "Edit Table", "Exit Edit")
+        Width: =32.12
+        X: =226.84
+        Y: =125
+        ZIndex: =29
+
+    Icon12_5 As icon.Edit:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Icon: =Icon.Edit
+        OnSelect: =Set(oeditGrid,!oeditGrid)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =5.65
+        X: =230.45
+        Y: =127
+        ZIndex: =30
+
+    Button2_18 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(242, 34, 55, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(247, 36, 57, 1), -20%)
+        OnSelect: |-
+            =ForAll(
+                Filter(
+                    Gallery3_7.AllItems,
+                    Toggle2_2.Value = true
+                ),
+                Patch(
+                    Switch(
+                        session_location.Value,
+                        "HO",
+                        Column,
+                        "RKK",
+                        Columns,
+                        "RLI",
+                        Row,
+                        "DVO",
+                        Rowes,
+                        "RKM",
+                        Rows
+                    ),
+                    ThisRecord,
+                    {
+                        Title: TextInput1_47.Text,
+                        Description: TextInput1_48.Text,
+                        Quantity: TextInput1_49.Text,
+                        Location: ComboBox3_9.Selected,
+                        Section: ComboBox3_23.Selected,
+                        Status: ComboBox3_10.Selected,
+                        AssignedTo: TextInput1_53.Text,
+                        Provider: TextInput1_54.Text,
+                        SubProvider: ComboBox3_11.Selected,
+                        Remarks: TextInput1_56.Text,
+                        OfficeLocation: TextInput1_81.Text
+                    }
+                )
+            );
+            Notify("Record updated successfully",NotificationType.Success);
+            Set(
+                cpseditGrid,
+                !cpseditGrid
+            )
+        PaddingLeft: =33
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =2.71
+        Text: ="Save "
+        Width: =27.82
+        X: =196.53
+        Y: =125
+        ZIndex: =31
+
+    Icon13_5 As icon.Save:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =31
+        Icon: =Icon.Save
+        OnSelect: |-
+            =ForAll(
+                Filter(
+                    Gallery3_7.AllItems,
+                    Toggle2_2.Value = true
+                ),
+                Patch(
+                    Switch(
+                        session_location.Value,
+                        "HO",
+                        Column,
+                        "RKK",
+                        Columns,
+                        "RLI",
+                        Row,
+                        "DVO",
+                        Rowes,
+                        "RKM",
+                        Rows
+                    ),
+                    ThisRecord,
+                    {
+                        Title: TextInput1_47.Text,
+                        Description: TextInput1_48.Text,
+                        Quantity: TextInput1_49.Text,
+                        Location: ComboBox3_9.Selected,
+                        Section: ComboBox3_23.Selected,
+                        Status: ComboBox3_10.Selected,
+                        AssignedTo: TextInput1_53.Text,
+                        Provider: TextInput1_54.Text,
+                        SubProvider: ComboBox3_11.Selected,
+                        Remarks: TextInput1_56.Text,
+                        OfficeLocation: TextInput1_81.Text
+                    }
+                )
+            );
+            Notify("Record updated successfully",NotificationType.Success);
+            Set(
+                cpseditGrid,
+                !cpseditGrid
+            )
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =10.40
+        X: =199.25
+        Y: =126
+        ZIndex: =32
+
+    Container1_7 As groupContainer.manualLayoutContainer:
+        Height: =35
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =219.83
+        X: =83.89
+        Y: =169
+        ZIndex: =37
+
+        Button3_53 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Description"
+            Width: =78.71
+            X: =56.54
+            ZIndex: =1
+
+        Button3_54 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Quantity"
+            Width: =30.75
+            X: =135.24
+            ZIndex: =2
+
+        Button3_55 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Lighter
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Location"
+            Width: =46.59
+            X: =166.01
+            ZIndex: =3
+
+        Button3_56 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Location Section"
+            Width: =38.45
+            X: =212.60
+            ZIndex: =4
+
+        Button3_57 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Status"
+            Width: =33.24
+            X: =251.04
+            ZIndex: =5
+
+        Button3_58 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Assigned To"
+            Width: =57.45
+            X: =284.28
+            ZIndex: =6
+
+        Button3_59 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Provider"
+            Width: =41.16
+            X: =341.73
+            ZIndex: =7
+
+        Button3_60 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Sub Provider"
+            Width: =49.97
+            X: =382.88
+            ZIndex: =8
+
+        Button3_61 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Remarks"
+            Width: =85.48
+            X: =432.87
+            ZIndex: =9
+
+        Button3_81 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Office Location"
+            Width: =49.76
+            X: =518.36
+            ZIndex: =10
+
+        Button3_52 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(69, 65, 65, 1)
+            Font: =Font.Lato
+            Height: =35
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =2.71
+            Text: ="Title"
+            Width: =56.54
+            X: =0.00
+            ZIndex: =11
+
+    Group1_4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =37
+
+        HtmlText3_158 As htmlViewer:
+            Font: =Font.Lato
+            Height: =668
+            HtmlText: |-
+                ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.97), 
+                          rgba(255, 255, 255, 0.97));width:100%;height:667px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =2.93
+            Visible: =If(session_admin.Value = "NO", true,false)
+            Width: =227.96
+            X: =78.25
+            Y: =89
+            ZIndex: =33
+
+        Label35_30 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 246, 247, 1)
+            Font: =Font.Lato
+            Height: =203
+            PaddingLeft: =100
+            PaddingRight: =9.05
+            PaddingTop: =9.05
+            Size: =3.85
+            Text: ="You are prohibited from accessing this page!"
+            Visible: =If(session_admin.Value = "NO", true,false)
+            Width: =145.65
+            X: =122.58
+            Y: =271
+            ZIndex: =34
+
+        Circle1_31 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =14.25
+            Visible: =If(session_admin.Value = "NO", true,false)
+            Width: =14.25
+            X: =188.39
+            Y: =303
+            ZIndex: =35
+
+        Icon12_32 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =63
+            Icon: =Icon.Cancel
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Visible: =If(session_admin.Value = "NO", true,false)
+            Width: =10.64
+            X: =190.43
+            Y: =305
+            ZIndex: =36
+
+    Slider1_4 As slider:
+        BorderColor: =RGBA(153, 153, 153, 1)
+        Default: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderColor: =
+        FocusedBorderThickness: =
+        HandleFill: =RGBA(255, 255, 255, 1)
+        HandleSize: =18
+        Height: =29
+        HoverBorderColor: =
+        Max: =1540
+        PressedBorderColor: =
+        RailFill: =RGBA(128, 130, 133, 1)
+        RailThickness: =2
+        ShowValue: =false
+        ValueFill: =RGBA(66, 66, 66, 1)
+        Width: =105.39
+        X: =156.95
+        Y: =716
+        ZIndex: =38
+
+    Button4_3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 176, 75, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(54, 176, 75, 1), -20%)
+        PaddingLeft: =35
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =2.71
+        Text: ="Excel"
+        Width: =23.97
+        X: =121.91
+        Y: =712
+        ZIndex: =42
+
+    Icon11_5 As icon.DocumentwithContent:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =27
+        Icon: =Icon.DocumentWithContent
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =9.27
+        X: =123.26
+        Y: =715
+        ZIndex: =43
+
+    Button5_3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 176, 75, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        PaddingLeft: =40
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =2.71
+        Text: ="Download"
+        Width: =33.48
+        X: =85.26
+        Y: =712
+        ZIndex: =44
+
+    Icon15_4 As icon.DocumentPDF:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.DocumentPDF
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =7.91
+        X: =88.21
+        Y: =713
+        ZIndex: =45
+
+    Group3_4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =53
+
+        HtmlText3_157 As htmlViewer:
+            Font: =Font.Lato
+            Height: =681
+            HtmlText: |-
+                ="<div style='background: linear-gradient(90deg,rgba(255, 255, 255, 0.97), 
+                          rgba(255, 255, 255, 0.97));width:100%;height:680px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer;border-radius:10px'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =2.93
+            Visible: =cpsDeleteItem
+            Width: =227.96
+            X: =79.38
+            Y: =72
+            ZIndex: =46
+
+        Label35_29 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 246, 247, 1)
+            Font: =Font.Lato
+            Height: =206
+            PaddingLeft: =100
+            PaddingRight: =9.05
+            PaddingTop: =9.05
+            Size: =3.39
+            Text: ="Are you sure you want to delete this item?"
+            Visible: =cpsDeleteItem
+            Width: =134.58
+            X: =133.65
+            Y: =266
+            ZIndex: =47
+
+        Circle1_30 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =14.47
+            Visible: =cpsDeleteItem
+            Width: =14.25
+            X: =189.52
+            Y: =290
+            ZIndex: =48
+
+        Icon16_4 As icon.Trash:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =69
+            Icon: =Icon.Trash
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Visible: =cpsDeleteItem
+            Width: =10.64
+            X: =191.33
+            Y: =287
+            ZIndex: =50
+
+        Button6_8 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(39, 171, 61, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =33
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: |-
+                =
+                Switch(
+                    session_location.Value,
+                    "HO",
+                    Remove(
+                        Column,
+                        Gallery3_7.Selected
+                    ),
+                    "RKK",
+                    Remove(
+                        Columns,
+                        Gallery3_7.Selected
+                    ),
+                    "RLI",
+                    Remove(
+                        Row,
+                        Gallery3_7.Selected
+                    ),
+                    "DVO",
+                    Remove(
+                        Rowes,
+                        Gallery3_7.Selected
+                    ),
+                    "RKM",
+                    Remove(
+                        Rows,
+                        Gallery3_7.Selected
+                    )
+                );
+                
+                Switch(
+                    session_location.Value,
+                    "HO", ClearCollect(dataPointCollection,Column),
+                    "RKK", ClearCollect(dataPointCollection,Columns),
+                    "RLI", ClearCollect(dataPointCollection,Row),
+                    "DVO", ClearCollect(dataPointCollection,Rowes),
+                    "RKM", ClearCollect(dataPointCollection,Rows)
+                );
+                
+                Notify("Selected item deleted successfully",NotificationType.Success);
+                Set(
+                    cpsDeleteItem,
+                    !cpsDeleteItem
+                )
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =2.71
+            Text: ="Yes"
+            Visible: =cpsDeleteItem
+            Width: =36.18
+            X: =152.43
+            Y: =419
+            ZIndex: =51
+
+        Button6_9 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =33
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: =Set(cpsDeleteItem,!cpsDeleteItem)
+            PaddingRight: =1.12
+            PaddingTop: =1.12
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =2.71
+            Text: ="No"
+            Visible: =cpsDeleteItem
+            Width: =36.18
+            X: =205.80
+            Y: =419
+            ZIndex: =52
+
+    TextInput2_3 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =33
+        HintText: ="kindly enter search criteria"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =2.93
+        Width: =87.74
+        X: =84.36
+        Y: =125
+        ZIndex: =54
+
+    Icon17_3 As icon.Search:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(77, 71, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =27
+        Icon: =Icon.Search
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =7.91
+        X: =162.83
+        Y: =128
+        ZIndex: =55
+
+    HtmlText3_130 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer'>Dashboard</div>"
+        OnSelect: =Navigate(cm,CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =223
+        ZIndex: =56
+
+    HtmlText3_142 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='background: linear-gradient(90deg,rgba(0, 0, 0, 0.4), 
+                      rgba(219, 202, 202, 0.4));width:100%;height:37px;text-align:center;padding-top:7px;padding-right:7px;cursor:pointer'>Projects</div>"
+        OnSelect: =Navigate(cm7ty56t,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =288
+        ZIndex: =57
+
+    HtmlText3_159 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:35px;cursor:pointer'>User Management</div>"
+        OnSelect: =Navigate(cmg5r3te,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =353
+        ZIndex: =58
+
+    Icon4_20 As icon.RadarActivityMonitor:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =39
+        Icon: =Icon.RadarActivityMonitor
+        OnSelect: =Navigate(cm,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =14.47
+        Y: =222
+        ZIndex: =59
+
+    Icon6_16 As icon.OfficeBuilding:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Icon: =Icon.OfficeBuilding
+        OnSelect: =Navigate(cm7ty56t,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =7.91
+        X: =14.47
+        Y: =288
+        ZIndex: =60
+
+    Icon5_11 As icon.Settings:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =34
+        Icon: =Icon.Settings
+        OnSelect: =Navigate(cmg5r3te_1,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =6.78
+        X: =14.47
+        Y: =353
+        ZIndex: =61
+
+    HtmlText3_243 As htmlViewer:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =39
+        HtmlText: |-
+            ="<div style='width:100%;height:37px;text-align:center;padding-top:7px;padding-left:7px;cursor:pointer'>Inventory List</div>"
+        OnSelect: =Navigate(cmjeriyg,ScreenTransition.CoverRight)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =2.93
+        Width: =75.99
+        X: =0.00
+        Y: =418
+        ZIndex: =62
+
+    Icon8_17 As icon.ListScrollWatchlist:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Icon: =Icon.ListScrollWatchlist
+        OnSelect: =Navigate(cmjeriyg,ScreenTransition.CoverRight)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =8.83
+        X: =14.47
+        Y: =418
+        ZIndex: =63
+
+    ComboBox8 As combobox:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 0)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronFill: =RGBA(0, 0, 0, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Value"]
+        Height: =35
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        IsSearchable: =false
+        Items: =Choices([@'Site Section'].Status)
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(32, 54, 71, 1)
+        SearchFields: =["Value"]
+        SearchItems: =[]
+        SelectionFill: =RGBA(100, 118, 132, 1)
+        Size: =2.93
+        Width: =45.24
+        X: =256.01
+        Y: =83
+        ZIndex: =64
+
+    Label19 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =44
+        PaddingRight: =1.12
+        PaddingTop: =1.12
+        Size: =2.93
+        Text: |-
+            ="Filter:"
+        Width: =21.48
+        X: =230.45
+        Y: =81
+        ZIndex: =65
+
